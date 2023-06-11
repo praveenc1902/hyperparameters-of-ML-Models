@@ -1,0 +1,21 @@
+max_depth : 
+The max_depth of a tree in Random Forest is defined as the longest path between the root node and the leaf node
+
+min_sample_split ::
+is a parameter that tells the decision tree in a random forest the minimum required number of observations in any given node in order to split it.
+
+max_leaf_nodes ::
+This hyperparameter sets a condition on the splitting of the nodes in the tree and hence restricts the growth of the tree. 
+
+min_sample_leaf ::
+This specifies the minimum number of samples that should be present in the leaf node after splitting a node.
+
+n_estimators :: total no of decision tree models in the random forest 
+
+max_samples ::
+determines what fraction of the original dataset is given to any individual tree.
+
+max_features ::
+the number of maximum features provided to each tree in a random forest.
+
+

@@ -1,0 +1,30 @@
+min_impurity_decrease :
+As the tree gets deeper, the amount of impurity decrease becomes lower. We can use this to prevent the tree from doing further splits. 
+The hyperparameter for this task is min_impurity_decrease. It is set to zero by default (0.2/0.3)
+
+Min_impurity_split :
+is parameter can be used to control the tree based on impurity values. It sets a threshold on gini. For instance, 
+if min_impurity_split is set to 0.3, a node needs to have a gini value that is more then 0.3 to be further splitted
+
+max_depth: 
+it is to control the depth of a tree. It does not make any calculations regarding impurity or sample ratio. 
+The model stops splitting when max_depth is reached.
+
+min_samples_leaf:
+It indicates the minimum number of samples required to be at a leaf node. We need to be careful when using hyperparameters together.
+
+max_leaf_nodes :
+We can also limit the number of leaf nodes using max_leaf_nodes parameter which grows the tree in best-first fashion until max_leaf_nodes reached. The best split is decided based on impurity decrease.
+
+max_features :
+which is the number of features to consider when looking for the best split. 
+If not specified, the model considers all of the features. There are 13 features in our dataset. 
+If we set max_features as 5, the model randomly selects 5 features to decide on the next split. 
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+n_neighborsint, default=5
+Number of neighbors to use by default for kneighbors queries.
+
+weights{‘uniform’, ‘distance’}
+‘uniform’ : uniform weights. All points in each neighborhood are weighted equally.
+
+‘distance’ : weight points by the inverse of their distance. in this case, closer neighbors of a query point will have a greater influence than neighbors which are further away.
+
+p :
+When p = 1, this is equivalent to using manhattan_distance 
+When p=2 this is equivalent to using euclidean_distance
+
+metric :
+
+

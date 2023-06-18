@@ -1,0 +1,18 @@
+random_state
+This is setting a random seed. It is useful if we want to reproduce exact clusters over and over again. 
+We can set it to any number we want.
+
+n_clusters :
+We need to provide the algorithm with the number of clusters that we want. Standard literature suggests 
+we use the elbow method to determine how many clusters we need and it works well for Scikits’ cleaned theoretical datasets.
+
+n_init :
+Number of times the k-means algorithm is run with different centroid seeds. 
+The final results is the best output of n_init consecutive runs in terms of inertia. 
+Several runs are recommended for sparse high-dimensional problems (see Clustering sparse data with k-means).
+When n_init='auto', the number of runs depends on the value of init: 10 if using init='random', 1 if using init='k-means++'.
+
+max_iter :
+There are n_init runs in general and each run iterates max_iter times, i.e.,
+within a run, points will be assigned to different clusters and the loss calculated for max_iter times.
+
